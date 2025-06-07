@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6da0801a7c6c48e43a6dbd6c4bd88002
+guid: 5d8419071d6a324458cbc00d890f1539
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6681014840517581380
-    second: damn bats thumbnail_0
+      213: 1593950154345575739
+    second: ring_faded 2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 256
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: damn bats thumbnail_0
+      name: ring_faded 2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 315
-        height: 250
+        x: 211
+        y: 215
+        width: 602
+        height: 594
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 44ad924999bb7bc50800000000000000
-      internalID: 6681014840517581380
+      spriteID: b3572736839de1610800000000000000
+      internalID: 1593950154345575739
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      damn bats thumbnail_0: 6681014840517581380
+      ring_faded 2_0: 1593950154345575739
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

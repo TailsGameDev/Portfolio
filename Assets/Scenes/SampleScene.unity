@@ -441,6 +441,10 @@ PrefabInstance:
       propertyPath: url
       value: https://tailsgamedev.itch.io/damn-bats
       objectReference: {fileID: 0}
+    - target: {fileID: 8879070528730540551, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: scrollRect
+      value: 
+      objectReference: {fileID: 1823927725}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -551,6 +555,10 @@ PrefabInstance:
       propertyPath: url
       value: https://tailsgamedev.itch.io/roots-of-decay
       objectReference: {fileID: 0}
+    - target: {fileID: 8879070528730540551, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: scrollRect
+      value: 
+      objectReference: {fileID: 1823927725}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -911,6 +919,10 @@ PrefabInstance:
       propertyPath: url
       value: https://play.google.com/store/apps/details?id=com.MagicDAYW.StreetLife&hl=pt_BR
       objectReference: {fileID: 0}
+    - target: {fileID: 8879070528730540551, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: scrollRect
+      value: 
+      objectReference: {fileID: 1823927725}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1495,6 +1507,50 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1085615554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1085615555}
+  - component: {fileID: 1085615556}
+  m_Layer: 0
+  m_Name: Tween Handler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1085615555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085615554}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1417297850}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1085615556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085615554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acb527a1429603545bd9d0985e6971c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1212093814
 GameObject:
   m_ObjectHideFlags: 0
@@ -1687,6 +1743,10 @@ PrefabInstance:
       propertyPath: url
       value: https://tailsgamedev.itch.io/cards-on-adventure
       objectReference: {fileID: 0}
+    - target: {fileID: 8879070528730540551, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: scrollRect
+      value: 
+      objectReference: {fileID: 1823927725}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1700,6 +1760,38 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8573504528321812536, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
   m_PrefabInstance: {fileID: 1283608941}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1417297849
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1417297850}
+  m_Layer: 0
+  m_Name: Singletons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1417297850
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417297849}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1085615555}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1418459062
 GameObject:
   m_ObjectHideFlags: 0
@@ -1915,6 +2007,10 @@ PrefabInstance:
       propertyPath: url
       value: https://play.google.com/store/apps/details?id=com.MagicDAYW.CooksAndGoblins
       objectReference: {fileID: 0}
+    - target: {fileID: 8879070528730540551, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: scrollRect
+      value: 
+      objectReference: {fileID: 1823927725}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -2526,18 +2622,6 @@ PrefabInstance:
       propertyPath: m_AspectRatio
       value: 1.7450424
       objectReference: {fileID: 0}
-    - target: {fileID: 4703792195008277269, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4703792195008277269, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.00012207031
-      objectReference: {fileID: 0}
-    - target: {fileID: 4703792195008277269, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.000030517578
-      objectReference: {fileID: 0}
     - target: {fileID: 5363351059720220914, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2658,6 +2742,10 @@ PrefabInstance:
       propertyPath: url
       value: https://store.steampowered.com/app/1375650/Crystal_Chasers_League/
       objectReference: {fileID: 0}
+    - target: {fileID: 8879070528730540551, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: scrollRect
+      value: 
+      objectReference: {fileID: 1823927725}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2669,5 +2757,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 619394802}
+  - {fileID: 1417297850}
   - {fileID: 569957611}
   - {fileID: 319464549}

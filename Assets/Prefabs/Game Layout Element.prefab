@@ -440,7 +440,7 @@ MonoBehaviour:
   originalPosition: {fileID: 3185704225893150196}
   darkCover: {fileID: 3599179361138499818}
   movingTransform: {fileID: 4703792195008277269}
-  moveAnimationDuration: 0.55
+  moveAnimationDuration: 0.25
 --- !u!1 &8775272982059052041
 GameObject:
   m_ObjectHideFlags: 0

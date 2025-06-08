@@ -13,7 +13,7 @@ public abstract class Singleton<T> : MonoBehaviour where T : MonoBehaviour
         }
         else if (instance != this)
         {
-            Debug.LogError("[Singleton] " + this.name + " should have only one instance on scene.", this);
+            Debug.LogWarning("[Singleton] " + this.name + " should have only one instance on scene.", this);
             Destroy(this);
         }
     }

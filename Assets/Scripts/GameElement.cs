@@ -36,14 +36,14 @@ public class GameElement : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         isPointerOverButton = true;
 
         TweenHandler.Instance.Cancel(cachedTween);
-        cachedTween = TweenHandler.Instance.BeginLocalPositionTween(movingTransform, upPosition, moveAnimationDuration);
+        cachedTween = TweenHandler.Instance.BeginQuadLocalPositionTween(movingTransform, upPosition, moveAnimationDuration);
     }
     public void OnPointerExit(PointerEventData eventData)
     {
         isPointerOverButton = false;
 
         TweenHandler.Instance.Cancel(cachedTween);
-        cachedTween = TweenHandler.Instance.BeginLocalPositionTween(movingTransform, originalPosition, moveAnimationDuration);
+        cachedTween = TweenHandler.Instance.BeginQuadLocalPositionTween(movingTransform, originalPosition, moveAnimationDuration);
     }
     public void OnScroll(PointerEventData eventData)
     {

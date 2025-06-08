@@ -2455,7 +2455,7 @@ GameObject:
   - component: {fileID: 1966118588}
   - component: {fileID: 1966118589}
   m_Layer: 5
-  m_Name: Games Layout
+  m_Name: Games Grid Layout
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2508,7 +2508,7 @@ MonoBehaviour:
   m_StartAxis: 0
   m_CellSize: {x: 567, y: 450}
   m_Spacing: {x: 50, y: 85.55}
-  m_Constraint: 1
+  m_Constraint: 0
   m_ConstraintCount: 3
 --- !u!1 &2010201365
 GameObject:

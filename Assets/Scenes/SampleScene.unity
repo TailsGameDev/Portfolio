@@ -217,7 +217,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &58119764
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1276,7 +1276,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &763257299
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1655,6 +1655,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1966118588}
     m_Modifications:
+    - target: {fileID: 5677860189975295945, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4549825131253782430, guid: e934e050472765c4483e56bae226d532, type: 3}
     - target: {fileID: 8418637932656652055, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_Name
       value: Cards On Adventure Element

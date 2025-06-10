@@ -30,14 +30,20 @@ public class Fruit : MonoBehaviour, IPointerEnterHandler
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        // Instantiate 2 fruit pieces and destroy this
-
+        // Instantiate two fruit pieces and destroy the original
         FruitPiece piece = Instantiate(fruitPiece1, transform.position, transform.rotation, parent: transform.parent);
-        piece.Initialize(force: eventData.delta * forceMultiplier, (transform.eulerAngles.z < 180.0f) ? 1.0f : -1.0f);
-
         FruitPiece piece2 = Instantiate(fruitPiece2, transform.position, transform.rotation, parent: transform.parent);
-        piece2.Initialize(force: eventData.delta * forceMultiplier, (transform.eulerAngles.z < 180.0f) ? -1.0f : 1.0f);
 
+        // Calculate directional forces with offset
+        const float OFFSET = 15;
+        Vector3 forceDirection1 = Quaternion.Euler(0, 0, OFFSET) * eventData.delta;
+        Vector3 forceDirection2 = Quaternion.Euler(0, 0, -OFFSET) * eventData.delta;
+
+        // Apply the forces with rotationMultiplier
+        piece.Initialize(force: forceDirection1 * forceMultiplier, (transform.eulerAngles.z < 180.0f) ? 1.0f : -1.0f);
+        piece2.Initialize(force: forceDirection2 * forceMultiplier, (transform.eulerAngles.z < 180.0f) ? -1.0f : 1.0f);
+
+        // Destroy the original fruit
         Destroy(gameObject);
     }
 }

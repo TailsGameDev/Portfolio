@@ -126,5 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 50
   forceMultiplier: 50
+  maxForce: 10
+  minForce: 2.5
   fruitPiece1: {fileID: 0}
   fruitPiece2: {fileID: 0}

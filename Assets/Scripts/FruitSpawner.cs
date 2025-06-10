@@ -6,6 +6,8 @@ public class FruitSpawner : MonoBehaviour
     private Transform leftLimit = null;
     [SerializeField]
     private Transform rightLimit = null;
+    [SerializeField]
+    private Transform bottomLimit = null;
 
     [SerializeField]
     private float minTimeToSpawn = 0.0f;
@@ -38,6 +40,7 @@ public class FruitSpawner : MonoBehaviour
                 Quaternion randomRotation = Quaternion.Euler(0, 0, Random.Range(0f, MAX_ROTATION));
 
                 fruitInstance = Instantiate(randomFruitPrefab, newFruitPosition, randomRotation, parent: transform);
+                fruitInstance.Initialize(bottomLimit);
             }
 
             nextTimeToSpawn = Time.time + Random.Range(minTimeToSpawn, maxTimeToSpawn);

@@ -14,18 +14,24 @@ public class Fruit : MonoBehaviour, IPointerEnterHandler
     private FruitPiece fruitPiece2 = null;
 
 
-    private Transform cachedFruitPiecesParent;
+    private Transform cachedBottomLimit;
 
 
-    public void Initialize(Transform fruitPiecesParent)
+    public void Initialize(Transform bottomLimit)
     {
-        cachedFruitPiecesParent = fruitPiecesParent;
+        cachedBottomLimit = bottomLimit;
     }
 
     private void Update()
     {
         // Move fruit down
         transform.position = transform.position + (speed * Time.deltaTime * Vector3.down);
+
+        // Destroy fruit when it gets too far down
+        if (transform.position.y < cachedBottomLimit.position.y)
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void OnPointerEnter(PointerEventData eventData)

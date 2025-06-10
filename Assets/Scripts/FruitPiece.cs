@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FruitPiece : MonoBehaviour
 {
@@ -8,6 +9,10 @@ public class FruitPiece : MonoBehaviour
     private float friction = 0.0f;
     [SerializeField]
     private float rotationFriction = 0.0f;
+    [SerializeField]
+    private float fadeSpeed = 0.0f;
+    [SerializeField]
+    private Image image = null;
 
     private Vector3 cachedForce;
     private float cachedRotationMultiplier;
@@ -30,5 +35,16 @@ public class FruitPiece : MonoBehaviour
         float rotationForce = cachedForce.magnitude;
         float rotationSpeed = cachedRotationMultiplier * Mathf.Pow(1 - rotationFriction, Time.deltaTime) * rotationForce;
         transform.Rotate(Vector3.forward, rotationSpeed * Time.deltaTime);
+
+        Color color = image.color;
+        color.a -= fadeSpeed * Time.deltaTime;
+        if (image.color.a <= 0.0f)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            image.color = color;
+        }
     }
 }

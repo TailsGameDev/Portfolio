@@ -52,6 +52,8 @@ MonoBehaviour:
   gravitySpeed: 50
   friction: 0.75
   rotationFriction: 0.5
+  fadeSpeed: 1
+  image: {fileID: 2977327804579833146}
 --- !u!1 &3672869482967950726
 GameObject:
   m_ObjectHideFlags: 0

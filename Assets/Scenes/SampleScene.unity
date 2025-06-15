@@ -2639,7 +2639,7 @@ PrefabInstance:
     - target: {fileID: 5677860189975295945, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -4549825131253782430, guid: e934e050472765c4483e56bae226d532, type: 3}
+      objectReference: {fileID: 416807227470237584, guid: 03e7af8f2fb62f942ba205a6c82593ed, type: 3}
     - target: {fileID: 8418637932656652055, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_Name
       value: Cards On Adventure Element

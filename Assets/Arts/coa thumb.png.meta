@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e934e050472765c4483e56bae226d532
+guid: 03e7af8f2fb62f942ba205a6c82593ed
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4549825131253782430
-    second: coa thumb 2_0
+      213: 416807227470237584
+    second: coa thumb_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -139,7 +139,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: coa thumb 2_0
+      name: coa thumb_0
       rect:
         serializedVersion: 2
         x: 0
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 268297d2626cbd0c0800000000000000
-      internalID: -4549825131253782430
+      spriteID: 09fcd2d07fbc8c500800000000000000
+      internalID: 416807227470237584
       vertices: []
       indices: 
       edges: []
@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      coa thumb_0: 416807227470237584
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

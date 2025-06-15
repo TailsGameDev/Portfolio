@@ -15,8 +15,6 @@ public class GameElement : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     private Transform originalPosition = null;
 
     [SerializeField]
-    private Image darkCover = null;
-    [SerializeField]
     private Transform movingTransform = null;
     [SerializeField]
     private float moveAnimationDuration = 0.0f;

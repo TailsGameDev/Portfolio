@@ -418,6 +418,10 @@ PrefabInstance:
       propertyPath: m_AspectRatio
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3310537968333561074, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: m_text
+      value: Swipe Life - Life Sim
+      objectReference: {fileID: 0}
     - target: {fileID: 5075987432193313935, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_Color.b
       value: 0.96470594
@@ -450,6 +454,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6027845815221887755, guid: 422855e33c3e3774184cb2932af04f61, type: 3}
+    - target: {fileID: 8245294495319825993, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: m_text
+      value: mobile | life simulator | swiping | API integration
+      objectReference: {fileID: 0}
     - target: {fileID: 8418637932656652055, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_Name
       value: Swipe Life Element
@@ -568,10 +576,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1966118588}
     m_Modifications:
+    - target: {fileID: 3310537968333561074, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: m_text
+      value: Damn Bats
+      objectReference: {fileID: 0}
     - target: {fileID: 5677860189975295945, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6681014840517581380, guid: 6da0801a7c6c48e43a6dbd6c4bd88002, type: 3}
+    - target: {fileID: 8245294495319825993, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: m_text
+      value: jumping | platformer | difficult | authorial
+      objectReference: {fileID: 0}
     - target: {fileID: 8418637932656652055, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_Name
       value: Damn Bats Element
@@ -682,10 +698,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1966118588}
     m_Modifications:
+    - target: {fileID: 3310537968333561074, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: m_text
+      value: Roots Of Decay
+      objectReference: {fileID: 0}
     - target: {fileID: 5677860189975295945, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 8364776710877761667, guid: 32dcf96c1f2428748b11e9bda264df8f, type: 3}
+    - target: {fileID: 8245294495319825993, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: m_text
+      value: action | combat | authorial
+      objectReference: {fileID: 0}
     - target: {fileID: 8418637932656652055, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_Name
       value: Roots Of Decay Element
@@ -1102,10 +1126,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1966118588}
     m_Modifications:
+    - target: {fileID: 3310537968333561074, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: m_text
+      value: 'Street Life: Business Empire'
+      objectReference: {fileID: 0}
     - target: {fileID: 5677860189975295945, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1915995522122219587, guid: 701dafa76c24dfc41a07876ebcc6ff9c, type: 3}
+    - target: {fileID: 8245294495319825993, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: m_text
+      value: mobile | tycoon | pathfinding | character AI state machine
+      objectReference: {fileID: 0}
     - target: {fileID: 8418637932656652055, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_Name
       value: Street Life Element
@@ -1216,10 +1248,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1966118588}
     m_Modifications:
+    - target: {fileID: 3310537968333561074, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: m_text
+      value: Escavestimento
+      objectReference: {fileID: 0}
     - target: {fileID: 5677860189975295945, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -7255022418143261584, guid: 63a90a6858a59d54887d3d99f6636611, type: 3}
+    - target: {fileID: 8245294495319825993, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: m_text
+      value: educational | mining | archeology | finances
+      objectReference: {fileID: 0}
     - target: {fileID: 8418637932656652055, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_Name
       value: Escavestimento
@@ -2086,7 +2126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_IgnoreLayout: 0
   m_MinWidth: -1
-  m_MinHeight: 38
+  m_MinHeight: 83.88
   m_PreferredWidth: -1
   m_PreferredHeight: -1
   m_FlexibleWidth: -1
@@ -2696,10 +2736,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1966118588}
     m_Modifications:
+    - target: {fileID: 3310537968333561074, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: m_text
+      value: Cards On Adventure
+      objectReference: {fileID: 0}
     - target: {fileID: 5677860189975295945, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 416807227470237584, guid: 03e7af8f2fb62f942ba205a6c82593ed, type: 3}
+    - target: {fileID: 8245294495319825993, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: m_text
+      value: roguelike | card game | authorial
+      objectReference: {fileID: 0}
     - target: {fileID: 8418637932656652055, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_Name
       value: Cards On Adventure Element
@@ -3164,6 +3212,10 @@ PrefabInstance:
       propertyPath: m_AspectRatio
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3310537968333561074, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: m_text
+      value: 'Swipe Stories: Forbidden Love'
+      objectReference: {fileID: 0}
     - target: {fileID: 5363351059720220914, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -3184,6 +3236,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6216902075052124732, guid: 0365d378f5951504ba82326b75721370, type: 3}
+    - target: {fileID: 8245294495319825993, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: m_text
+      value: mobile | story | swiping | API integration
+      objectReference: {fileID: 0}
     - target: {fileID: 8418637932656652055, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_Name
       value: Swipe Stories Element
@@ -3302,6 +3358,10 @@ PrefabInstance:
       propertyPath: m_AspectRatio
       value: 0.5625
       objectReference: {fileID: 0}
+    - target: {fileID: 3310537968333561074, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: m_text
+      value: 'Cooks & Goblins: Feast Quest'
+      objectReference: {fileID: 0}
     - target: {fileID: 5363351059720220914, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3338,6 +3398,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 6562763dba045134790fed248504b96b, type: 3}
+    - target: {fileID: 8245294495319825993, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: m_text
+      value: mobile | tycoon | pathfinding | character AI state machine
+      objectReference: {fileID: 0}
     - target: {fileID: 8418637932656652055, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_Name
       value: Cooks And Goblins Element
@@ -4419,6 +4483,10 @@ PrefabInstance:
       propertyPath: m_AspectRatio
       value: 1.7450424
       objectReference: {fileID: 0}
+    - target: {fileID: 3310537968333561074, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: m_text
+      value: Crystal Chasers League
+      objectReference: {fileID: 0}
     - target: {fileID: 5363351059720220914, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -4445,12 +4513,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5363351059720220914, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000030517578
+      value: 0.000061035156
       objectReference: {fileID: 0}
     - target: {fileID: 5677860189975295945, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -6877234994905234364, guid: bd6797f5a77cff84f9fedd213f489afe, type: 3}
+    - target: {fileID: 8245294495319825993, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: m_text
+      value: PC | online multiplayer | races | battles | crystal chaptors | ++
+      objectReference: {fileID: 0}
     - target: {fileID: 8418637932656652055, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_Name
       value: CCL Element

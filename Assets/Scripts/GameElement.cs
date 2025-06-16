@@ -19,10 +19,16 @@ public class GameElement : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     [SerializeField]
     private float moveAnimationDuration = 0.0f;
 
+    [SerializeField]
+    private CanvasGroup darkCover = null;
+    [SerializeField]
+    private float darkCoverAnimationAlpha = 0.0f;
+
     private bool isPointerOverButton = false;
 
     // private float timeLimitToConsiderClick;
-    private Tween cachedTween;
+    private Tween cachedPositionTween;
+    private Tween cachedAplhaTween;
 
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -33,15 +39,21 @@ public class GameElement : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     {
         isPointerOverButton = true;
 
-        TweenHandler.Instance.Cancel(cachedTween);
-        cachedTween = TweenHandler.Instance.BeginQuadLocalPositionTween(movingTransform, upPosition, moveAnimationDuration);
+        // Animate position and canvas group
+        TweenHandler.Instance.Cancel(cachedPositionTween);
+        cachedPositionTween = TweenHandler.Instance.BeginQuadLocalPositionTween(movingTransform, upPosition, moveAnimationDuration);
+        TweenHandler.Instance.Cancel(cachedAplhaTween);
+        cachedAplhaTween = TweenHandler.Instance.BeginQuadCanvasGroupTween(darkCover, targetAplha: darkCoverAnimationAlpha, moveAnimationDuration);
     }
     public void OnPointerExit(PointerEventData eventData)
     {
         isPointerOverButton = false;
 
-        TweenHandler.Instance.Cancel(cachedTween);
-        cachedTween = TweenHandler.Instance.BeginQuadLocalPositionTween(movingTransform, originalPosition, moveAnimationDuration);
+        // Animate position and canvas group
+        TweenHandler.Instance.Cancel(cachedPositionTween);
+        cachedPositionTween = TweenHandler.Instance.BeginQuadLocalPositionTween(movingTransform, originalPosition, moveAnimationDuration);
+        TweenHandler.Instance.Cancel(cachedAplhaTween);
+        cachedAplhaTween = TweenHandler.Instance.BeginQuadCanvasGroupTween(darkCover, targetAplha: 0.0f, moveAnimationDuration);
     }
     public void OnScroll(PointerEventData eventData)
     {

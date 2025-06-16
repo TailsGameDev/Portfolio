@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Tween
 {
@@ -66,6 +67,34 @@ public class TweenHandler : Singleton<TweenHandler>
             if (elapsedTime >= duration)
             {
                 transform.localPosition = target.localPosition;
+                tweens.Remove(tween);
+            }
+        };
+
+        tweens.Add(tween);
+        return tween;
+    }
+
+    public Tween BeginQuadCanvasGroupTween(CanvasGroup canvasGroup, float targetAplha, float duration)
+    {
+        Tween tween = new Tween();
+        float startTime = Time.time;
+        float originalAlpha = canvasGroup.alpha;
+
+        tween.execute = () =>
+        {
+            float elapsedTime = Time.time - startTime;
+
+            // Quadratic easing in-out function (AI code)
+            float t = Mathf.Clamp01(elapsedTime / duration);
+            t = t < 0.5f ? 2f * t * t : 1f - Mathf.Pow(-2f * t + 2f, 2f) / 2f;
+
+            canvasGroup.alpha = Mathf.Lerp(originalAlpha, targetAplha, t);
+
+            if (elapsedTime >= duration)
+            {
+                canvasGroup.alpha = targetAplha;
+
                 tweens.Remove(tween);
             }
         };

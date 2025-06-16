@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FruitSpawner : MonoBehaviour
 {
@@ -6,6 +7,8 @@ public class FruitSpawner : MonoBehaviour
     private Transform leftLimit = null;
     [SerializeField]
     private Transform rightLimit = null;
+    [SerializeField]
+    private Transform topLimit = null;
     [SerializeField]
     private Transform bottomLimit = null;
 
@@ -15,12 +18,28 @@ public class FruitSpawner : MonoBehaviour
     private float maxTimeToSpawn = 0.0f;
 
     [SerializeField]
+    private int initialFruitsAmount = 0;
+    [SerializeField]
+    private RectTransform layoutToRebuild = null;
+
+    [SerializeField]
     private Fruit[] fruitPrefabs = null;
 
     private float nextTimeToSpawn;
 
-    private void Awake()
+
+    private void Start()
     {
+        // Instantiate a range of random fruits to fill the screen right from start
+        // NOTE: Instantiate fruits at Start so Unity UI has time to set its position
+        for (int f = 0; f < initialFruitsAmount; f++)
+        {
+            float randomXPosition = Random.Range(leftLimit.position.x, rightLimit.position.x);
+            float randomYPosition = Random.Range(topLimit.position.y, bottomLimit.position.y);
+            InstantiateFruitWithRandomRotation(fruitPosition: topLimit.position + Vector3.right * randomXPosition + Vector3.down * randomYPosition);
+        }
+
+        // Set time to spawn the next fruit
         nextTimeToSpawn = Time.time + Random.Range(minTimeToSpawn, maxTimeToSpawn);
     }
 
@@ -29,21 +48,22 @@ public class FruitSpawner : MonoBehaviour
         if (Time.time > nextTimeToSpawn)
         {
             // Instantiate fruit at a random position and rotation
-            Fruit fruitInstance;
             {
-                Fruit randomFruitPrefab = fruitPrefabs[Random.Range(0, fruitPrefabs.Length)];
-
                 float randomXPosition = Random.Range(leftLimit.position.x, rightLimit.position.x);
-                Vector3 newFruitPosition = transform.position + (Vector3.right * randomXPosition);
-
-                const float MAX_ROTATION = 360f;
-                Quaternion randomRotation = Quaternion.Euler(0, 0, Random.Range(0f, MAX_ROTATION));
-
-                fruitInstance = Instantiate(randomFruitPrefab, newFruitPosition, randomRotation, parent: transform);
-                fruitInstance.Initialize(bottomLimit);
+                InstantiateFruitWithRandomRotation(fruitPosition: topLimit.position + Vector3.right * randomXPosition);
             }
 
             nextTimeToSpawn = Time.time + Random.Range(minTimeToSpawn, maxTimeToSpawn);
         }
+    }
+    private void InstantiateFruitWithRandomRotation(Vector3 fruitPosition)
+    {
+        Fruit randomFruitPrefab = fruitPrefabs[Random.Range(0, fruitPrefabs.Length)];
+
+        const float MAX_ROTATION = 360.0f;
+        Quaternion randomRotation = Quaternion.Euler(0, 0, Random.Range(0f, MAX_ROTATION));
+
+        Fruit fruitInstance = Instantiate(randomFruitPrefab, fruitPosition, randomRotation, parent: transform);
+        fruitInstance.Initialize(bottomLimit);
     }
 }

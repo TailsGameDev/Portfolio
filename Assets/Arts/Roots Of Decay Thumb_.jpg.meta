@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 63a90a6858a59d54887d3d99f6636611
+guid: 0685ccd9b4766374487dc02e3ded8ba0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7255022418143261584
-    second: escavestimento thumb_0
+      213: 8364776710877761667
+    second: Roots Of Decay Thumb__0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: escavestimento thumb_0
+      name: Roots Of Decay Thumb__0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 729
-        height: 583
+        width: 470
+        height: 376
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 07c4319ac8bf05b90800000000000000
-      internalID: -7255022418143261584
+      spriteID: 380545d9918a51470800000000000000
+      internalID: 8364776710877761667
       vertices: []
       indices: 
       edges: []
@@ -164,7 +164,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      escavestimento thumb_0: -7255022418143261584
+      Roots Of Decay Thumb__0: 8364776710877761667
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

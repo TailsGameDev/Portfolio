@@ -1,7 +1,12 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class SocialMediaLink : MonoBehaviour
+public class SocialMediaLink : MonoBehaviour, IScrollHandler
 {
+    [SerializeField]
+    private ScrollRect scrollRect = null;
+
     [SerializeField]
     private string url;
 
@@ -14,6 +19,7 @@ public class SocialMediaLink : MonoBehaviour
 
     private float targetAlpha;
     private float fadeSpeed;
+    private bool isPointerOverButton;
 
 
     private void Awake()
@@ -31,11 +37,15 @@ public class SocialMediaLink : MonoBehaviour
 
     public void OnPointerEnter()
     {
+        isPointerOverButton = true;
+
         targetAlpha = 1.0f;
     }
 
     public void OnPointerExit()
     {
+        isPointerOverButton = false;
+
         targetAlpha = 0.0f;
     }
 
@@ -46,5 +56,13 @@ public class SocialMediaLink : MonoBehaviour
     public void OnMailPointerClick()
     {
         Application.OpenURL($"mailto:{url}");
+    }
+
+    public void OnScroll(PointerEventData eventData)
+    {
+        if (scrollRect != null && isPointerOverButton)
+        {
+            ExecuteEvents.Execute(scrollRect.gameObject, eventData, ExecuteEvents.scrollHandler);
+        }
     }
 }

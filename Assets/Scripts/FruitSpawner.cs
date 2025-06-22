@@ -19,8 +19,6 @@ public class FruitSpawner : MonoBehaviour
 
     [SerializeField]
     private int initialFruitsAmount = 0;
-    [SerializeField]
-    private RectTransform layoutToRebuild = null;
 
     [SerializeField]
     private Fruit[] fruitPrefabs = null;

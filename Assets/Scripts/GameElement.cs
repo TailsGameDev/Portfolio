@@ -1,5 +1,7 @@
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 using UnityEngine.EventSystems;
+using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.UI;
 
 public class GameElement : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IScrollHandler, IPointerClickHandler
@@ -23,6 +25,29 @@ public class GameElement : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     private CanvasGroup darkCover = null;
     [SerializeField]
     private float darkCoverAnimationAlpha = 0.0f;
+
+    [SerializeField]
+    private Image gameImage = null;
+
+    [SerializeField]
+    private string spriteAddress = null;
+
+    private void Awake()
+    {
+        Addressables.LoadAssetAsync<Sprite>(spriteAddress).Completed += OnSpriteLoaded;
+    }
+    private void OnSpriteLoaded(AsyncOperationHandle<Sprite> handle)
+    {
+        if (handle.Status == AsyncOperationStatus.Succeeded)
+        {
+            gameImage.sprite = handle.Result;
+        }
+        else
+        {
+            Debug.LogError("[GameElement] Failed to load sprite from addressables.", this);
+        }
+    }
+
 
     private bool isPointerOverButton = false;
 

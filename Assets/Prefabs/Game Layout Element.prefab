@@ -805,6 +805,8 @@ MonoBehaviour:
   moveAnimationDuration: 0.25
   darkCover: {fileID: 2010028975988751729}
   darkCoverAnimationAlpha: 1
+  gameImage: {fileID: 5677860189975295945}
+  spriteAddress: 
 --- !u!1 &8775272982059052041
 GameObject:
   m_ObjectHideFlags: 0

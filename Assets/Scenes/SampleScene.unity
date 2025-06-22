@@ -343,8 +343,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1234868074}
   m_HandleRect: {fileID: 1234868073}
   m_Direction: 2
-  m_Value: 0.99999994
-  m_Size: 0.415688
+  m_Value: 1
+  m_Size: 0.4156734
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -440,10 +440,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 44
       objectReference: {fileID: 0}
-    - target: {fileID: 5677860189975295945, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 6027845815221887755, guid: 422855e33c3e3774184cb2932af04f61, type: 3}
     - target: {fileID: 8245294495319825993, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_text
       value: mobile | life simulator | swiping | API integration
@@ -540,6 +536,10 @@ PrefabInstance:
       propertyPath: scrollRect
       value: 
       objectReference: {fileID: 1823927725}
+    - target: {fileID: 8879070528730540551, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: spriteAddress
+      value: Assets/Adressables/swipe-life.jpg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -570,10 +570,6 @@ PrefabInstance:
       propertyPath: m_text
       value: Damn Bats
       objectReference: {fileID: 0}
-    - target: {fileID: 5677860189975295945, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6da0801a7c6c48e43a6dbd6c4bd88002, type: 3}
     - target: {fileID: 8245294495319825993, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_text
       value: jumping | platformer | difficult | authorial
@@ -670,6 +666,10 @@ PrefabInstance:
       propertyPath: scrollRect
       value: 
       objectReference: {fileID: 1823927725}
+    - target: {fileID: 8879070528730540551, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: spriteAddress
+      value: Assets/Adressables/damn-bats.png
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -692,10 +692,6 @@ PrefabInstance:
       propertyPath: m_text
       value: Roots Of Decay
       objectReference: {fileID: 0}
-    - target: {fileID: 5677860189975295945, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 0685ccd9b4766374487dc02e3ded8ba0, type: 3}
     - target: {fileID: 8245294495319825993, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_text
       value: action | combat | authorial
@@ -792,6 +788,10 @@ PrefabInstance:
       propertyPath: scrollRect
       value: 
       objectReference: {fileID: 1823927725}
+    - target: {fileID: 8879070528730540551, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: spriteAddress
+      value: Assets/Adressables/roots-of-decay.jpg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1161,10 +1161,6 @@ PrefabInstance:
       propertyPath: m_text
       value: 'Street Life: Business Empire'
       objectReference: {fileID: 0}
-    - target: {fileID: 5677860189975295945, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -1915995522122219587, guid: 701dafa76c24dfc41a07876ebcc6ff9c, type: 3}
     - target: {fileID: 8245294495319825993, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_text
       value: mobile | tycoon | pathfinding | character AI state machine
@@ -1261,6 +1257,10 @@ PrefabInstance:
       propertyPath: scrollRect
       value: 
       objectReference: {fileID: 1823927725}
+    - target: {fileID: 8879070528730540551, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: spriteAddress
+      value: Assets/Adressables/street-life.jpg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1534,10 +1534,6 @@ PrefabInstance:
       propertyPath: m_text
       value: Escavestimento
       objectReference: {fileID: 0}
-    - target: {fileID: 5677860189975295945, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -7255022418143261584, guid: 4554ce7254572a240bcae495909c449f, type: 3}
     - target: {fileID: 8245294495319825993, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_text
       value: educational | mining | archeology | finances
@@ -1634,6 +1630,10 @@ PrefabInstance:
       propertyPath: scrollRect
       value: 
       objectReference: {fileID: 1823927725}
+    - target: {fileID: 8879070528730540551, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: spriteAddress
+      value: Assets/Adressables/escavestimento.jpg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1839,7 +1839,6 @@ MonoBehaviour:
   minTimeToSpawn: 0
   maxTimeToSpawn: 1
   initialFruitsAmount: 25
-  layoutToRebuild: {fileID: 569957611}
   fruitPrefabs:
   - {fileID: 626459978259386194, guid: 991f75211e13c514582e771ab1f965ca, type: 3}
   - {fileID: 626459978259386194, guid: 45fc00fa3560fc94e8d1edb05b66f200, type: 3}
@@ -3360,10 +3359,6 @@ PrefabInstance:
       propertyPath: m_text
       value: Cards On Adventure
       objectReference: {fileID: 0}
-    - target: {fileID: 5677860189975295945, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 03e7af8f2fb62f942ba205a6c82593ed, type: 3}
     - target: {fileID: 8245294495319825993, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_text
       value: roguelike | card game | authorial
@@ -3460,6 +3455,10 @@ PrefabInstance:
       propertyPath: scrollRect
       value: 
       objectReference: {fileID: 1823927725}
+    - target: {fileID: 8879070528730540551, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: spriteAddress
+      value: Assets/Adressables/coa.png
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3837,26 +3836,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5363351059720220914, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5363351059720220914, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5363351059720220914, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 118
-      objectReference: {fileID: 0}
-    - target: {fileID: 5363351059720220914, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -59
-      objectReference: {fileID: 0}
-    - target: {fileID: 5677860189975295945, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 6216902075052124732, guid: 0365d378f5951504ba82326b75721370, type: 3}
     - target: {fileID: 8245294495319825993, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_text
       value: mobile | story | swiping | API integration
@@ -3953,6 +3932,10 @@ PrefabInstance:
       propertyPath: scrollRect
       value: 
       objectReference: {fileID: 1823927725}
+    - target: {fileID: 8879070528730540551, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: spriteAddress
+      value: Assets/Adressables/swiipe-stories.jpg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -4018,10 +4001,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5677860189975295945, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6562763dba045134790fed248504b96b, type: 3}
     - target: {fileID: 8245294495319825993, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_text
       value: mobile | tycoon | pathfinding | character AI state machine
@@ -4118,6 +4097,10 @@ PrefabInstance:
       propertyPath: scrollRect
       value: 
       objectReference: {fileID: 1823927725}
+    - target: {fileID: 8879070528730540551, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: spriteAddress
+      value: Assets/Adressables/cooks-and-goblins.jpg
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -5169,38 +5152,6 @@ PrefabInstance:
       propertyPath: m_text
       value: Crystal Chasers League
       objectReference: {fileID: 0}
-    - target: {fileID: 5363351059720220914, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5363351059720220914, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5363351059720220914, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5363351059720220914, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 785.2691
-      objectReference: {fileID: 0}
-    - target: {fileID: 5363351059720220914, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5363351059720220914, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5363351059720220914, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.000061035156
-      objectReference: {fileID: 0}
-    - target: {fileID: 5677860189975295945, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -6877234994905234364, guid: bd6797f5a77cff84f9fedd213f489afe, type: 3}
     - target: {fileID: 8245294495319825993, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: m_text
       value: PC | online multiplayer | races | battles | crystal chaptors | ++
@@ -5297,6 +5248,10 @@ PrefabInstance:
       propertyPath: scrollRect
       value: 
       objectReference: {fileID: 1823927725}
+    - target: {fileID: 8879070528730540551, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: spriteAddress
+      value: Assets/Adressables/ccl.png
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

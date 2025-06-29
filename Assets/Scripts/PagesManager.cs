@@ -1,0 +1,75 @@
+using UnityEngine;
+
+public class PagesManager : MonoBehaviour
+{
+    [SerializeField]
+    private GameObject workPage = null;
+    [SerializeField]
+    private GameObject[] allPages = null;
+
+    [SerializeField]
+    private HeaderButton backButton = null;
+    [SerializeField]
+    private HeaderButton[] headerButtons = null;
+
+
+    private GameObject currentPage;
+
+
+    private void Awake()
+    {
+        // Initialize all header buttons
+        for (int h = 0; h < headerButtons.Length; h++)
+        {
+            headerButtons[h].Initialize(OnHeaderButtonClick);
+        }
+
+        // Set current page
+        for (int p = 0; p < allPages.Length; p++)
+        {
+            if (allPages[p].activeSelf)
+            {
+                SetCurrentPage(allPages[p]);
+                break;
+            }
+        }
+    }
+    private void OnHeaderButtonClick(HeaderButton clickedButton)
+    {
+        SetCurrentPage(clickedButton.PageToActivate);
+
+        if (clickedButton != backButton)
+        {
+            clickedButton.Select();
+        }
+        else
+        {
+            // Select the work button, as all back buttons lead to work page
+            for (int h = 0; h < headerButtons.Length; h++)
+            {
+                HeaderButton loopButton = headerButtons[h];
+                bool hasFoundWorkButton = (loopButton.PageToActivate == workPage) && (loopButton != backButton);
+                if (hasFoundWorkButton)
+                {
+                    loopButton.Select();
+                    break;
+                }
+            }
+        }
+    }
+
+    private void SetCurrentPage(GameObject newCurrentPage)
+    {
+        currentPage = newCurrentPage;
+
+        // Activate current page and deactivate all others
+        for (int p = 0; p < allPages.Length; p++)
+        {
+            GameObject loopPage = allPages[p];
+            loopPage.SetActive(newCurrentPage == loopPage);
+        }
+
+        // Enable back button for every page but the work page
+        backButton.SetGameObjectActive(currentPage != workPage);
+    }
+}

@@ -1,5 +1,7 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class HeaderButton : MonoBehaviour, IScrollHandler
@@ -14,9 +16,8 @@ public class HeaderButton : MonoBehaviour, IScrollHandler
     private float fadeDuration = 0.0f;
 
     [SerializeField]
-    private GameObject gameObjectToActivate = null;
-    [SerializeField]
-    private GameObject gameObjectToDeactivate = null;
+    [FormerlySerializedAs("gameObjectToActivate")]
+    private GameObject pageToActivate = null;
 
     [SerializeField]
     private HeaderButton otherHeaderButton = null;
@@ -26,9 +27,13 @@ public class HeaderButton : MonoBehaviour, IScrollHandler
     private float targetAlpha;
     private float fadeSpeed;
     private bool isPointerOverButton;
+    private Action<HeaderButton> onHeaderButtonClick;
 
 
-    private void Awake()
+    public GameObject PageToActivate { get => pageToActivate; }
+
+
+    public void Initialize(Action<HeaderButton> onHeaderButtonClickParam)
     {
         fadeSpeed = 1.0f / fadeDuration;
 
@@ -36,6 +41,8 @@ public class HeaderButton : MonoBehaviour, IScrollHandler
         {
             targetAlpha = 1.0f;
         }
+
+        onHeaderButtonClick = onHeaderButtonClickParam;
     }
 
     private void Update()
@@ -65,10 +72,14 @@ public class HeaderButton : MonoBehaviour, IScrollHandler
 
     public void OnPointerClick()
     {
-        gameObjectToActivate.SetActive(true);
-        gameObjectToDeactivate.SetActive(false);
+        onHeaderButtonClick?.Invoke(this);
+    }
 
+    public void Select()
+    {
         isSelected = true;
+        targetAlpha = 1.0f;
+
         otherHeaderButton.isSelected = false;
         otherHeaderButton.targetAlpha = 0.0f;
     }
@@ -78,6 +89,18 @@ public class HeaderButton : MonoBehaviour, IScrollHandler
         if (scrollRect != null && isPointerOverButton)
         {
             ExecuteEvents.Execute(scrollRect.gameObject, eventData, ExecuteEvents.scrollHandler);
+        }
+    }
+
+    public void SetGameObjectActive(bool activate)
+    {
+        gameObject.SetActive(activate);
+
+        if (activate)
+        {
+            // Set the canvas group alpha as deselected so if button gets activated again it does not look selected
+            canvasGroup.alpha = 0.0f;
+            targetAlpha = 0.0f;
         }
     }
 }

@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 64806267384124830}
   - component: {fileID: 4230676502237596654}
   m_Layer: 5
-  m_Name: CCL Element
+  m_Name: Game Element
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.EventSystems;
@@ -32,10 +33,28 @@ public class GameElement : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     [SerializeField]
     private string spriteAddress = null;
 
-    private void Awake()
+    [SerializeField]
+    private GameObject pageToOpen = null;
+
+
+    private Action<GameElement> onGameElementClick;
+
+    private bool isPointerOverButton = false;
+
+    private Tween cachedPositionTween;
+    private Tween cachedAplhaTween;
+
+
+    public GameObject PageToOpen { get => pageToOpen; }
+
+
+    public void Initialize(Action<GameElement> onGameElementClickParam)
     {
+        onGameElementClick = onGameElementClickParam;
+
         Addressables.LoadAssetAsync<Sprite>(spriteAddress).Completed += OnSpriteLoaded;
     }
+
     private void OnSpriteLoaded(AsyncOperationHandle<Sprite> handle)
     {
         if (handle.Status == AsyncOperationStatus.Succeeded)
@@ -48,16 +67,17 @@ public class GameElement : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         }
     }
 
-
-    private bool isPointerOverButton = false;
-
-    // private float timeLimitToConsiderClick;
-    private Tween cachedPositionTween;
-    private Tween cachedAplhaTween;
-
     public void OnPointerClick(PointerEventData eventData)
     {
-        Application.OpenURL(url);
+        if (pageToOpen != null)
+        {
+            onGameElementClick?.Invoke(this);
+            DeselectElement();
+        }
+        else
+        {
+            Application.OpenURL(url);
+        }
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -71,6 +91,10 @@ public class GameElement : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         cachedAplhaTween = TweenHandler.Instance.BeginQuadCanvasGroupTween(darkCover, targetAplha: darkCoverAnimationAlpha, moveAnimationDuration);
     }
     public void OnPointerExit(PointerEventData eventData)
+    {
+        DeselectElement();
+    }
+    private void DeselectElement()
     {
         isPointerOverButton = false;
 

@@ -12,6 +12,9 @@ public class PagesManager : MonoBehaviour
     [SerializeField]
     private HeaderButton[] headerButtons = null;
 
+    [SerializeField]
+    private GameElement[] allGameElements = null;
+
 
     private GameObject currentPage;
 
@@ -32,6 +35,11 @@ public class PagesManager : MonoBehaviour
                 SetCurrentPage(allPages[p]);
                 break;
             }
+        }
+
+        for (int e = 0; e < allGameElements.Length; e++)
+        {
+            allGameElements[e].Initialize(OnGameElementClick);
         }
     }
     private void OnHeaderButtonClick(HeaderButton clickedButton)
@@ -58,6 +66,14 @@ public class PagesManager : MonoBehaviour
         }
     }
 
+    public void OnGameElementClick(GameElement gameElement)
+    {
+        if (gameElement.PageToOpen != null)
+        {
+            SetCurrentPage(gameElement.PageToOpen);
+        }
+    }
+
     private void SetCurrentPage(GameObject newCurrentPage)
     {
         currentPage = newCurrentPage;
@@ -71,5 +87,7 @@ public class PagesManager : MonoBehaviour
 
         // Enable back button for every page but the work page
         backButton.SetGameObjectActive(currentPage != workPage);
+
+        // TODO: Reposition to upper part
     }
 }

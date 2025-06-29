@@ -2,13 +2,10 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class SocialMediaLink : MonoBehaviour, IScrollHandler
+public class HeaderButton : MonoBehaviour, IScrollHandler
 {
     [SerializeField]
     private ScrollRect scrollRect = null;
-
-    [SerializeField]
-    private string url = null;
 
     [SerializeField]
     private CanvasGroup canvasGroup = null;
@@ -16,6 +13,10 @@ public class SocialMediaLink : MonoBehaviour, IScrollHandler
     [SerializeField]
     private float fadeDuration = 0.0f;
 
+    [SerializeField]
+    private GameObject gameObjectToActivate = null;
+    [SerializeField]
+    private GameObject gameObjectToDeactivate = null;
 
     private float targetAlpha;
     private float fadeSpeed;
@@ -51,11 +52,8 @@ public class SocialMediaLink : MonoBehaviour, IScrollHandler
 
     public void OnPointerClick()
     {
-        Application.OpenURL(url);
-    }
-    public void OnMailPointerClick()
-    {
-        Application.OpenURL($"mailto:{url}");
+        gameObjectToActivate.SetActive(true);
+        gameObjectToDeactivate.SetActive(false);
     }
 
     public void OnScroll(PointerEventData eventData)

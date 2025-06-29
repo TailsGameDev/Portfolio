@@ -18,6 +18,11 @@ public class HeaderButton : MonoBehaviour, IScrollHandler
     [SerializeField]
     private GameObject gameObjectToDeactivate = null;
 
+    [SerializeField]
+    private HeaderButton otherHeaderButton = null;
+    [SerializeField]
+    private bool isSelected = false;
+
     private float targetAlpha;
     private float fadeSpeed;
     private bool isPointerOverButton;
@@ -26,6 +31,11 @@ public class HeaderButton : MonoBehaviour, IScrollHandler
     private void Awake()
     {
         fadeSpeed = 1.0f / fadeDuration;
+
+        if (isSelected)
+        {
+            targetAlpha = 1.0f;
+        }
     }
 
     private void Update()
@@ -47,13 +57,20 @@ public class HeaderButton : MonoBehaviour, IScrollHandler
     {
         isPointerOverButton = false;
 
-        targetAlpha = 0.0f;
+        if (!isSelected)
+        {
+            targetAlpha = 0.0f;
+        }
     }
 
     public void OnPointerClick()
     {
         gameObjectToActivate.SetActive(true);
         gameObjectToDeactivate.SetActive(false);
+
+        isSelected = true;
+        otherHeaderButton.isSelected = false;
+        otherHeaderButton.targetAlpha = 0.0f;
     }
 
     public void OnScroll(PointerEventData eventData)

@@ -160,6 +160,10 @@ RectTransform:
   - {fileID: 336706542}
   - {fileID: 751199912}
   - {fileID: 1458401165}
+  - {fileID: 1718195131}
+  - {fileID: 1313253150}
+  - {fileID: 254961132}
+  - {fileID: 1400451371}
   - {fileID: 47155055}
   - {fileID: 756659433}
   - {fileID: 1720823149}
@@ -234,6 +238,11 @@ MonoBehaviour:
   - {fileID: 2131717564}
   - {fileID: 336706543}
   - {fileID: 751199913}
+  - {fileID: 1458401164}
+  - {fileID: 1718195132}
+  - {fileID: 1313253151}
+  - {fileID: 254961133}
+  - {fileID: 1400451372}
   backButton: {fileID: 2135610586}
   headerButtons:
   - {fileID: 2135610586}
@@ -983,6 +992,10 @@ PrefabInstance:
       value: https://tailsgamedev.itch.io/damn-bats
       objectReference: {fileID: 0}
     - target: {fileID: 8879070528730540551, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: pageToOpen
+      value: 
+      objectReference: {fileID: 1400451372}
+    - target: {fileID: 8879070528730540551, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: scrollRect
       value: 
       objectReference: {fileID: 1823927725}
@@ -1105,6 +1118,10 @@ PrefabInstance:
       value: https://tailsgamedev.itch.io/roots-of-decay
       objectReference: {fileID: 0}
     - target: {fileID: 8879070528730540551, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: pageToOpen
+      value: 
+      objectReference: {fileID: 254961133}
+    - target: {fileID: 8879070528730540551, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: scrollRect
       value: 
       objectReference: {fileID: 1823927725}
@@ -1218,6 +1235,219 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!1001 &254961131
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7350422}
+    m_Modifications:
+    - target: {fileID: 64806267384124830, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64806267384124830, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64806267384124830, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 850
+      objectReference: {fileID: 0}
+    - target: {fileID: 64806267384124830, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 550
+      objectReference: {fileID: 0}
+    - target: {fileID: 64806267384124830, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 535.29315
+      objectReference: {fileID: 0}
+    - target: {fileID: 64806267384124830, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -275
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1920.5863
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 550
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 960.29315
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2366.5898
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230676502237596654, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: url
+      value: https://tailsgamedev.itch.io/roots-of-decay
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429392246220117433, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0685ccd9b4766374487dc02e3ded8ba0, type: 3}
+    - target: {fileID: 4491438237929770436, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_Name
+      value: Roots Of Decay Page
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491438237929770436, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5666461276777977930, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5666461276777977930, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5666461276777977930, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -162.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660821369036582481, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_text
+      value: action | combat | authorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 7421065695836746669, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_text
+      value: "<b>Roots of Decay</b>\nTailsGameDev \u2014 Global Game Jam 2023\n\nWindows
+        game available on Itch.io\nDeveloped in 48 hours\n\n\u2013 Programmer, game
+        designer, and team leader\n\u2013 Assembled the team to create this Souls-like
+        game\n\u2013 Features 5 stages where the player must destroy a tree, but
+        beware: mages and walking trees guard it\n\u2013 Includes frame-freezing
+        and gorgeous VFX\n\u2013 Sword-based combat against multiple enemies\n\u2013
+        Take three hits, and it\u2019s \u201CYOU DIED\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7421065695836746669, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_lineSpacing
+      value: 19.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 7828222777443516371, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_text
+      value: Roots Of Decay
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545302789926427042, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545302789926427042, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545302789926427042, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 850
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545302789926427042, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 550
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545302789926427042, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1385.2932
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545302789926427042, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -275
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733939541148011765, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733939541148011765, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733939541148011765, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+--- !u!224 &254961132 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+  m_PrefabInstance: {fileID: 254961131}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &254961133 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4491438237929770436, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+  m_PrefabInstance: {fileID: 254961131}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &261790687
 GameObject:
   m_ObjectHideFlags: 0
@@ -1939,6 +2169,10 @@ PrefabInstance:
       propertyPath: url
       value: https://gamejolt.com/games/escavestimento/432573
       objectReference: {fileID: 0}
+    - target: {fileID: 8879070528730540551, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: pageToOpen
+      value: 
+      objectReference: {fileID: 1313253151}
     - target: {fileID: 8879070528730540551, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: scrollRect
       value: 
@@ -4396,6 +4630,10 @@ PrefabInstance:
       value: https://tailsgamedev.itch.io/cards-on-adventure
       objectReference: {fileID: 0}
     - target: {fileID: 8879070528730540551, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: pageToOpen
+      value: 
+      objectReference: {fileID: 1718195132}
+    - target: {fileID: 8879070528730540551, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: scrollRect
       value: 
       objectReference: {fileID: 1823927725}
@@ -4424,6 +4662,219 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a8e2e1218353314a84a58ca0a68b6cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1313253149
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7350422}
+    m_Modifications:
+    - target: {fileID: 64806267384124830, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64806267384124830, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64806267384124830, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 850
+      objectReference: {fileID: 0}
+    - target: {fileID: 64806267384124830, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 550
+      objectReference: {fileID: 0}
+    - target: {fileID: 64806267384124830, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 535.29315
+      objectReference: {fileID: 0}
+    - target: {fileID: 64806267384124830, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -275
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1920.5863
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 550
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 960.29315
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2366.5898
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230676502237596654, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: url
+      value: https://gamejolt.com/games/escavestimento/432573
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429392246220117433, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7255022418143261584, guid: 4554ce7254572a240bcae495909c449f, type: 3}
+    - target: {fileID: 4491438237929770436, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_Name
+      value: Escavestimento Page
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491438237929770436, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5666461276777977930, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5666461276777977930, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5666461276777977930, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -162.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660821369036582481, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_text
+      value: educational | mining | archeology | finances
+      objectReference: {fileID: 0}
+    - target: {fileID: 7421065695836746669, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_text
+      value: "<b>Escavestimento</b>\nSC Games\n\nWindows game available on Game Jolt\nI
+        worked on it for three months in 2019.\n\n\u2013 Educational finance game
+        for kids\n\u2013 Implemented the artifact-cleaning mini-game\n\u2013 Created
+        randomized events for each game cycle\n\u2013 Built responsive UI for all
+        screens\n\u2013 Implemented the cycle-based financial reports\n\u2013 Contributed
+        to the mining game\u2019s state machine\n\u2013 The game was funded through
+        a public grant"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7421065695836746669, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_lineSpacing
+      value: 19.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 7828222777443516371, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_text
+      value: Escavestimento
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545302789926427042, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545302789926427042, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545302789926427042, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 850
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545302789926427042, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 550
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545302789926427042, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1385.2932
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545302789926427042, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -275
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733939541148011765, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733939541148011765, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733939541148011765, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+--- !u!224 &1313253150 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+  m_PrefabInstance: {fileID: 1313253149}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1313253151 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4491438237929770436, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+  m_PrefabInstance: {fileID: 1313253149}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1346937849
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4647,6 +5098,218 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a8e2e1218353314a84a58ca0a68b6cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1400451370
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7350422}
+    m_Modifications:
+    - target: {fileID: 64806267384124830, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64806267384124830, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64806267384124830, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 850
+      objectReference: {fileID: 0}
+    - target: {fileID: 64806267384124830, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 550
+      objectReference: {fileID: 0}
+    - target: {fileID: 64806267384124830, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 535.29315
+      objectReference: {fileID: 0}
+    - target: {fileID: 64806267384124830, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -275
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1920.5863
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 550
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 960.29315
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2366.5898
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230676502237596654, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: url
+      value: https://tailsgamedev.itch.io/damn-bats
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429392246220117433, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6da0801a7c6c48e43a6dbd6c4bd88002, type: 3}
+    - target: {fileID: 4491438237929770436, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_Name
+      value: Damn Bats Page
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491438237929770436, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5666461276777977930, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5666461276777977930, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5666461276777977930, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -162.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660821369036582481, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_text
+      value: jumping | platformer | difficult | authorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 7421065695836746669, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_text
+      value: "<b>Damn Bats</b>\nTailsGameDev \u2014 Game Jam+\n\nWindows game available
+        on Itch.io\nDeveloped in 48 hours.\n\n\u2013 Programmer, game designer, and
+        team leader\n\u2013 Assembled the team to create this jumping game\n\u2013
+        Jump across platforms while being harassed by annoying bats\n\u2013 Rescue
+        a cat stuck at the top of a tree on the final platform\n\u2013 Simple but
+        well-polished mechanics"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7421065695836746669, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_lineSpacing
+      value: 19.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 7828222777443516371, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_text
+      value: Damn Bats
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545302789926427042, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545302789926427042, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545302789926427042, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 850
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545302789926427042, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 550
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545302789926427042, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1385.2932
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545302789926427042, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -275
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733939541148011765, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733939541148011765, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733939541148011765, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+--- !u!224 &1400451371 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+  m_PrefabInstance: {fileID: 1400451370}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1400451372 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4491438237929770436, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+  m_PrefabInstance: {fileID: 1400451370}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1417297849
 GameObject:
   m_ObjectHideFlags: 0
@@ -4887,6 +5550,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a8e2e1218353314a84a58ca0a68b6cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1458401164 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4491438237929770436, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+  m_PrefabInstance: {fileID: 1585744685}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1458401165 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
@@ -5177,6 +5845,10 @@ PrefabInstance:
       propertyPath: url
       value: https://play.google.com/store/apps/details?id=com.MagicDAYW.CooksAndGoblins
       objectReference: {fileID: 0}
+    - target: {fileID: 8879070528730540551, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
+      propertyPath: pageToOpen
+      value: 
+      objectReference: {fileID: 1458401164}
     - target: {fileID: 8879070528730540551, guid: 731ebd83d040bee4ba497a4cb9346051, type: 3}
       propertyPath: scrollRect
       value: 
@@ -5546,7 +6218,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 64806267384124830, guid: 893ec7d2717e3364caac7680530debda, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 535.28326
+      value: 535.29315
       objectReference: {fileID: 0}
     - target: {fileID: 64806267384124830, guid: 893ec7d2717e3364caac7680530debda, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -5578,7 +6250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1920.5665
+      value: 1920.5863
       objectReference: {fileID: 0}
     - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
       propertyPath: m_SizeDelta.y
@@ -5614,7 +6286,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 960.28326
+      value: 960.29315
       objectReference: {fileID: 0}
     - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -5634,12 +6306,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4230676502237596654, guid: 893ec7d2717e3364caac7680530debda, type: 3}
       propertyPath: url
-      value: https://play.google.com/store/apps/details?id=com.MagicDAYW.StreetLife&hl=pt_BR
+      value: https://play.google.com/store/apps/details?id=com.MagicDAYW.CooksAndGoblins
       objectReference: {fileID: 0}
     - target: {fileID: 4429392246220117433, guid: 893ec7d2717e3364caac7680530debda, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -1915995522122219587, guid: 701dafa76c24dfc41a07876ebcc6ff9c, type: 3}
+      objectReference: {fileID: 21300000, guid: 6562763dba045134790fed248504b96b, type: 3}
     - target: {fileID: 4491438237929770436, guid: 893ec7d2717e3364caac7680530debda, type: 3}
       propertyPath: m_Name
       value: Cooks And Goblins Page
@@ -5666,10 +6338,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7421065695836746669, guid: 893ec7d2717e3364caac7680530debda, type: 3}
       propertyPath: m_text
-      value: "<b>Street Life</b>\nMagic Do As You Will\n\nMobile game available on
-        the Play Store.\nI worked on it from February to May 2025.\n\n\u2013 Tycoon-style
-        gameplay, inspired by Eatventure\n\u2013 Reskin of Cooks and Goblins with
-        a new theme\n\u2013 Customized UI and art assets for the new setting\n\u2013
+      value: "<b>Cooks and Goblins</b>\nMagic Do As You Will\n\nMobile game available
+        on the Play Store\nI worked on it from October 2024 to February 2025\n\n\u2013
+        Tycoon-style gameplay, inspired by Eatventure\n\u2013 Reskin of Lucky Tycoon
+        title with a new theme\n\u2013 Customized UI and art assets for the new setting\n\u2013
         Implemented A* pathfinding with waypoints and grid\n\u2013 Developed finite
         state machines for all characters\n\u2013 Built upgrade systems and tween
         animations\n\u2013 Contributed to many other features"
@@ -5680,7 +6352,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7828222777443516371, guid: 893ec7d2717e3364caac7680530debda, type: 3}
       propertyPath: m_text
-      value: 'Street Life: Business Empire'
+      value: 'Cooks & Goblins: Feast Quest'
       objectReference: {fileID: 0}
     - target: {fileID: 8545302789926427042, guid: 893ec7d2717e3364caac7680530debda, type: 3}
       propertyPath: m_AnchorMax.y
@@ -5700,7 +6372,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8545302789926427042, guid: 893ec7d2717e3364caac7680530debda, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1385.2832
+      value: 1385.2932
       objectReference: {fileID: 0}
     - target: {fileID: 8545302789926427042, guid: 893ec7d2717e3364caac7680530debda, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -5833,6 +6505,220 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1659673995}
   m_CullTransparentMesh: 1
+--- !u!1001 &1718195130
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7350422}
+    m_Modifications:
+    - target: {fileID: 64806267384124830, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64806267384124830, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64806267384124830, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 850
+      objectReference: {fileID: 0}
+    - target: {fileID: 64806267384124830, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 550
+      objectReference: {fileID: 0}
+    - target: {fileID: 64806267384124830, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 535.29315
+      objectReference: {fileID: 0}
+    - target: {fileID: 64806267384124830, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -275
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1920.5863
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 550
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 960.29315
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -2366.5898
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230676502237596654, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: url
+      value: https://tailsgamedev.itch.io/cards-on-adventure
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429392246220117433, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 03e7af8f2fb62f942ba205a6c82593ed, type: 3}
+    - target: {fileID: 4491438237929770436, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_Name
+      value: Cards On Adventure Page
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491438237929770436, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5666461276777977930, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5666461276777977930, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5666461276777977930, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -162.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660821369036582481, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_text
+      value: roguelike | card game | authorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 7421065695836746669, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_text
+      value: "<b>Cards On Adventure</b>\nTailsGameDev\n\nIncomplete mobile/WebGL
+        game available on Itch.io\nI worked on it for a few months in 2020, then
+        in 2025\n\n\u2013 Roguelike card game inspired by Slay the Spire\n\u2013
+        Features original mechanics. Each card grants a skill\n\u2013 Built all the
+        code, from menus to battle state machine\n\u2013 Game data is serialized
+        and saved in persistence\n\u2013 Cards can be improved to increase their
+        power\n\u2013 Story is told through a messaging app-style interface\n\u2013
+        Includes many other features"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7421065695836746669, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_lineSpacing
+      value: 19.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 7828222777443516371, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_text
+      value: Cards On Adventure
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545302789926427042, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545302789926427042, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545302789926427042, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 850
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545302789926427042, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 550
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545302789926427042, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1385.2932
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545302789926427042, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -275
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733939541148011765, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733939541148011765, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8733939541148011765, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+--- !u!224 &1718195131 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 885185080792842933, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+  m_PrefabInstance: {fileID: 1718195130}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1718195132 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4491438237929770436, guid: 893ec7d2717e3364caac7680530debda, type: 3}
+  m_PrefabInstance: {fileID: 1718195130}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1720823148
 GameObject:
   m_ObjectHideFlags: 0

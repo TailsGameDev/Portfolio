@@ -29,6 +29,8 @@ public class GameElement : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
     [SerializeField]
     private Image gameImage = null;
+    [SerializeField]
+    private Image pageGameImage = null;
 
     [SerializeField]
     private string spriteAddress = null;
@@ -43,6 +45,9 @@ public class GameElement : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
     private Tween cachedPositionTween;
     private Tween cachedAplhaTween;
+
+    private int safetyCounter;
+    private const int MAX_SAFETY_COUNT = 15;
 
 
     public GameObject PageToOpen { get => pageToOpen; }
@@ -60,10 +65,18 @@ public class GameElement : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         if (handle.Status == AsyncOperationStatus.Succeeded)
         {
             gameImage.sprite = handle.Result;
+            pageGameImage.sprite = handle.Result;
         }
         else
         {
             Debug.LogError("[GameElement] Failed to load sprite from addressables.", this);
+
+            // Try to load the sprite again, to a safety limit
+            if (safetyCounter < MAX_SAFETY_COUNT)
+            {
+                Addressables.LoadAssetAsync<Sprite>(spriteAddress).Completed += OnSpriteLoaded;
+                safetyCounter++;
+            }
         }
     }
 

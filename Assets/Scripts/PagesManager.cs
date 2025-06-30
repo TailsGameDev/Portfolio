@@ -3,6 +3,8 @@ using UnityEngine;
 public class PagesManager : MonoBehaviour
 {
     [SerializeField]
+    private RectTransform contentRectTransform = null;
+    [SerializeField]
     private GameObject workPage = null;
     [SerializeField]
     private GameObject[] allPages = null;
@@ -88,6 +90,6 @@ public class PagesManager : MonoBehaviour
         // Enable back button for every page but the work page
         backButton.SetGameObjectActive(currentPage != workPage);
 
-        // TODO: Reposition to upper part
+        contentRectTransform.anchoredPosition = Vector2.zero;
     }
 }

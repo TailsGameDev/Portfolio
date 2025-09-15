@@ -87,7 +87,7 @@ public class GameElement : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             onGameElementClick?.Invoke(this);
             DeselectElement();
         }
-        else
+        else if ( url != null && url != "" )
         {
             Application.OpenURL(url);
         }
